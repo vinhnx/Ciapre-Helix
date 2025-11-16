@@ -1,0 +1,136 @@
+# CiapreBlack Theme for Helix Editor
+# Based on the CiapreBlack.tmTheme by Vinh Nguyen
+# This is a darker variant with black background instead of dark blue
+
+# Global UI Colors
+"ui.background" = { bg = "background" }
+"ui.text" = { fg = "foreground" }
+"ui.text.focus" = { fg = "cursor" }
+"ui.cursor" = { fg = "cursor", bg = "background" }
+"ui.cursor.match" = { fg = "blue", bg = "background" }
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+"ui.linenr" = { fg = "comment" }
+"ui.linenr.selected" = { fg = "cursor" }
+"ui.statusline" = { fg = "foreground", bg = "selection" }
+"ui.statusline.inactive" = { fg = "comment", bg = "selection" }
+"ui.popup" = { bg = "background" }
+"ui.window" = { bg = "background" }
+"ui.help" = { bg = "background", fg = "foreground" }
+"ui.menu" = { bg = "selection", fg = "foreground" }
+"ui.menu.selected" = { bg = "foreground", fg = "background" }
+"ui.virtual.whitespace" = { fg = "comment" }
+"ui.virtual.indent-guide" = { fg = "comment" }
+"ui.virtual.ruler" = { bg = "selection" }
+
+# Diagnostics
+"warning" = { fg = "yellow" }
+"error" = { fg = "invalid" }
+"info" = { fg = "cursor" }
+"hint" = { fg = "blue" }
+
+"diagnostic.warning" = { fg = "yellow", underline = { color = "yellow", style = "curl" } }
+"diagnostic.error" = { fg = "invalid", underline = { color = "invalid", style = "curl" } }
+"diagnostic.info" = { fg = "cursor", underline = { color = "cursor", style = "curl" } }
+"diagnostic.hint" = { fg = "blue", underline = { color = "blue", style = "curl" } }
+
+# Syntax Highlighting
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.block" = { fg = "comment", modifiers = ["italic"] }
+"comment.line" = { fg = "comment", modifiers = ["italic"] }
+
+"keyword" = { fg = "red" }
+"keyword.control" = { fg = "red" }
+"keyword.directive" = { fg = "gray" }
+"keyword.function" = { fg = "red" }
+
+"operator" = { fg = "foreground" }
+
+"identifier" = { fg = "magenta" }
+"identifier.attribute" = { fg = "cyan" }
+
+"variable" = { fg = "magenta" }
+"variable.builtin" = { fg = "magenta" }
+"variable.parameter" = { fg = "cyan" }
+"variable.other.member" = { fg = "cyan" }
+
+"type" = { fg = "blue" }
+"type.builtin" = { fg = "blue" }
+"type.enum" = { fg = "blue" }
+"type.interface" = { fg = "blue" }
+
+"constructor" = { fg = "foreground" }
+
+"constant" = { fg = "red" }
+"constant.builtin" = { fg = "light-red" }
+"constant.character" = { fg = "yellow" }
+"constant.character.escape" = { fg = "yellow" }
+"constant.numeric" = { fg = "red" }
+
+"string" = { fg = "yellow" }
+"string.quoted" = { fg = "yellow" }
+"string.regexp" = { fg = "yellow" }
+"string.special" = { fg = "yellow" }
+"string.special.symbol" = { fg = "yellow" }
+
+"character" = { fg = "yellow" }
+"character.special" = { fg = "yellow" }
+
+"label" = { fg = "light-gray" }
+
+"punctuation" = { fg = "foreground" }
+"punctuation.delimiter" = { fg = "foreground" }
+"punctuation.bracket" = { fg = "foreground" }
+"punctuation.special" = { fg = "foreground" }
+
+"tag" = { fg = "orange" }
+"tag.builtin" = { fg = "orange" }
+"tag.attribute" = { fg = "cyan" }
+
+"function" = { fg = "orange" }
+"function.builtin" = { fg = "green" }
+"function.method" = { fg = "orange" }
+"function.macro" = { fg = "orange" }
+
+"namespace" = { fg = "foreground" }
+
+"special" = { fg = "purple" }
+
+"markup.heading" = { fg = "light-yellow", modifiers = ["bold"] }
+"markup.list" = { fg = "light-yellow" }
+"markup.bold" = { fg = "foreground", modifiers = ["bold"] }
+"markup.italic" = { fg = "foreground", modifiers = ["italic"] }
+"markup.link" = { fg = "blue" }
+"markup.quote" = { fg = "light-yellow" }
+
+"diff.plus" = { fg = "yellow" }
+"diff.minus" = { fg = "invalid" }
+"diff.delta" = { fg = "cyan" }
+
+"ui.gutter" = { bg = "background" }
+"ui.bufferline" = { fg = "comment", bg = "selection" }
+"ui.bufferline.active" = { fg = "cursor", bg = "selection", modifiers = ["bold"] }
+
+# Color Palette - Adjusted for black background
+[palette]
+background = "#222222"  # Changed from #1F2433 to #222 for blacker background
+foreground = "#C2B790"
+cursor = "#A89700"
+selection = "#1B324A"
+comment = "#696969"
+red = "#C24D43"
+light-red = "#DB592E"
+orange = "#DEA050"
+yellow = "#BAB972"
+light-yellow = "#EBEB91"
+green = "#5C644C"
+blue = "#6B84A3"
+light-blue = "#38add8"
+purple = "#896492"
+cyan = "#60827E"
+magenta = "#E64976"
+pink = "#CC695F"
+gray = "#676767"
+light-gray = "#B9AA99"
+dark-gray = "#1D1D1D"
+invalid = "#990000"
